@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <header>
-      <span>Vue.js PWA</span>
+      <span>Quack</span>
     </header>
+    
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
+      <img id="logo" src="./assets/quack_logo.png" alt="Quack Logo">
+      <br>
       <router-view></router-view>
     </main>
   </div>
@@ -16,9 +18,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="css">
 body {
   margin: 0;
+  background-color: lightyellow;
 }
 
 #app {
@@ -50,5 +53,15 @@ header span {
   font-weight: 400;
   box-sizing: border-box;
   padding-top: 16px;
+}
+
+#logo{
+  width: 25%;
+  margin: 0 0 50px 0em;
+}
+
+#quacktop{
+  position: relative;
+  height: 100%;
 }
 </style>
